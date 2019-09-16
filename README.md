@@ -1,2 +1,3 @@
-# 2019.opentechsummit.net
-Website of OpenTechSummit 2019
+# opentechsummit.de
+Website of OpenTechSummit 2020
+https://opentechsummit.de
