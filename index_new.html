@@ -1,0 +1,1052 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>OpenTechSummit Europe - Open Source Software, Open Hardware, Open Design, Open Data, Open Knowledge</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="OpenTechSummit Europe - Open Source Software, Open Hardware, Open Design, Open Data, Open Knowledge">
+        <meta name="keywords" content="Open Source, Development, FOSS, Free and Open Source Software, Asia">
+        <meta name="author" content="OpenTechSummit">
+        <meta property="og:title" content="OpenTechSummit" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://srilanka.opentech.asia/img/opntec.png" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@otsasia">
+        <meta name="twitter:title" content="OpenTechSummit">
+        <meta name="twitter:description" content="OpenTechSummit Europe - Open Source Software, Open Hardware, Open Design, Open Data, Open Knowledge">
+        <meta name="twitter:creator" content="@fossasia">
+        <meta name="twitter:image" content="https://srilanka.opentech.asia/img/opntec.png">
+		<link rel=icon href="OpenTechSummit.ico">
+		
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+		<link href="css/backToTop.css" rel="stylesheet" type="text/css"/>
+        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/pe-icon-7-stroke.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/theme-properorange.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/custom-blog.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/text-overlay.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+        <script>
+          // changes email address in homepage to make it responsive according to screen resolutions
+          if (screen.width <=853) {
+          document.getElementById('mailAdd').innerHTML = 'fossasia@google...';
+        }
+			// add eventListener for scroll to top button
+			const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+			window.addEventListener("scroll", showScrollToTopBtn);
+			function showScrollToTopBtn() {
+			    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  					scrollToTopBtn.style.display = "block";
+  				} else {
+					scrollToTopBtn.style.display = "none";
+  				}
+			}
+        </script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+		<script src="js/feednami.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/skrollr.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/flexslider.min.js"></script>
+        <script src="js/jquery.plugin.min.js"></script>
+        <script src="js/jquery.countdown.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/placeholders.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/tweets.js"></script>
+    </head>
+
+    <body class="no-loader">
+
+    	<div class="loader">
+    		<div class="strip-holder">
+				<div class="strip-1"></div>
+				<div class="strip-2"></div>
+				<div class="strip-3"></div>
+    		</div>
+    	</div>
+
+    	<a id="top"></a>
+		<div class="nav-container">
+
+				<nav class="overlay-nav">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-2">
+								<a  target="_self" class="inner-link" href="#top"><img alt="FOSSASIA" class="logo logo-light" src="img/OTS_white.png">
+								<img alt="FOSSASIA" class="logo logo-dark" src="img/OTS_grey.png"></a>
+							</div>
+
+							<div class="col-md-10 text-right">
+								<ul class="menu">
+									<li><a target="_self" href="./tickets">Tickets</a></li>
+									<li><a target="_self" href="./speaker-registration">Speaker Registration</a></li>
+    					<li class="has-dropdown">
+                                <a class="inner-link" href="#schedule" ">Event</a>
+                                  <ul class="nav-dropdown " style="min-height:140px ">
+                            <li>
+                            	<a class="inner-link " href="#topics">Event Topics</a>
+                            </li>
+                            <li>
+                            	<a class="inner-link " href="#featured-speakers">Featured Speakers</a>
+                            </li>
+                            <li>
+                            	<a class="inner-link " href="#schedule">Daily Overview</a>
+                            </li>
+                            <li>
+                            	<a class="inner-link " href="#schedule-roster">Schedule Roster</a>
+                            </li>
+                            <li>
+                                <a target="_self" class="inner-link" href="#venue">Venue Location</a>
+                            </li>
+                        </ul>
+									<li><a target="_self" class="inner-link" href="#sponsors">Sponsors</a></li>
+									<li><a target="_self" class="inner-link" href="#volunteer">Volunteer</a></li>
+									<li class="has-dropdown"><a target="_self" href="https://opentechsummit.net">Other Events</a>
+										<ul class="nav-dropdown events" style="min-height: 355px"> <!--whenever you add/remove an option, change the style="min-height:425px" by +- 25px-->
+											<li><a target="_self" href="https://eventyay.com">Open Source Event Management</a></li>
+											<li><a target="_self" href="https://summit.fossasia.org">FOSSASIA Summit Singapore</a></li>
+											<li><a target="_self" href="https://opentechsummit.cn">OpenTechSummit China</a></li>
+											<li><a target="_self" href="https://opentechsummit.eu">OpenTechSummit Europe</a></li>
+											<li><a target="_self" href="https://opentechsummit.in">OpenTechSummit India</a></li>
+											<li><a target="_self" href="https://indochina.opentech.asia">OpenTechSummit Indochina</a></li>
+											<li><a target="_self" href="https://thai.opentech.asia">OpenTechSummit Thailand</a></li>
+											<li><a target="_self" href="https://vn.opentech.asia">OpenTechSummit Vietnam</a></li>
+											<li><a target="_self" href="https://jugaadfest.com">Jugaad Fest India</a></li>
+										    </li>
+											<li><a target="_self" href="https://opentechsummit.net">... More Events</a></li>
+										</ul>
+									</li>
+									<li class="social-link hidden-md hidden-sm hidden-xs"><a target="_self" href="https://twitter.com/otsasia"><i class="icon social_twitter"></i></a></li>
+									<li class="social-link hidden-md hidden-sm hidden-xs"><a target="_self" href="https://www.facebook.com/opentechsummitasia/"><i class="icon social_facebook"></i></a></li>
+      								<li class="social-link hidden-md hidden-sm hidden-xs"><a target="_self" href="https://github.com/fossasia"><i class="fa fa-github fa-lg"></i></a></li>
+								<!--	<div class="sidebar-menu-toggle" ><i class="icon icon_menu"></i></div> -->
+									<div class="mobile-menu-toggle"><i class="icon icon_menu"></i></div> 
+								</ul>
+							</div>
+						</div>
+					</div>
+
+						</div>
+					</div>
+				</nav>
+			</div>
+
+    <div class="main-container">
+        <section class="hero-slider">
+            <ul class="slides">
+                <li class="video-header">
+                    <div class="background-image-holder parallax-background">
+                        <img class="background-image" alt="FOSSASIA" src="img/OTS_SriLanka.jpg">
+                    </div>
+
+
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-offset-1 col-sm-10 col-sm-offset-1 text-center col-md-10">
+                                <img alt="logo" class="logo" src="img/OpenTechSummit.png">
+                                <span class="uppercase text-white sub-heading-font ">OpenTechSummit Europe</span> <h1 class="large-h1 text-white">
+                                 <!--   <span>The future is FOSS!</span><br> -->
+                                <span>"Digital Sovereignity"<br>
+                                at Europe's Premier Open Technology Event<br>
+                                May 20-21, 2020, TU Berlin</span>
+                                </h1>
+                                <a target="_self" href="./tickets/" class="btn">Tickets</a>
+                                <a target="_self" href="./speaker-registration/" class="btn btn-hollow inner-link">Speaker Registration</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <a id="intro" class="in-page-link"></a>
+        <section class="color-blocks">
+            <div class="color-block block-left col-md-6 col-sm-12"></div>
+            <div class="color-block block-right col-md-6 col-sm-12"></div>
+            <div class="container">
+                <div class="row">
+                    <a href="./tickets/" class="block-content col-md-6 col-sm-12" target="_self">
+                        <div class="col-md-4 col-sm-4 text-center">
+                            <i class="icon pe-7s-id icon-large"></i>
+                        </div>
+
+                        <div class="col-md-8 col-sm-8">
+                            <h1>Get your Ticket now. Let's celebrate Open Tech!</h1>
+                            <p class="lead">
+                                Choose from different options for business and community tickets.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="./speaker-registration" class="block-content col-md-6 col-sm-12" target="_self">
+                        <div class="col-md-4 col-sm-4 text-center">
+                            <i class="icon pe-7s-like2 icon-large"></i>
+                        </div>
+                        <div class="col-md-8 col-sm-8">
+                            <h1>Interested to become a speaker? Propose your session here.</h1>
+                            <p class="lead">
+                                We have different tracks with sessions about Cloud, DevOps, AI, Machine Learning, Blockchain, Open Hardware, Science, Web, Mobile and more.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <a id="topics" class="in-page-link"></a>
+        <a id="tracks" class="in-page-link"></a>
+        <section class="duplicatable-content visitor-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Topics</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="info-box">
+                            <img alt="Artificial Intelligence" src="img/ArtificialIntelligence.jpg">
+                            <h3>Artificial Intelligence</h3>
+                            <p>From building an AI server infrastructure to creating skills and actions for voice assistants or create your own Open Source chatbots with SUSI.AI. Join sessions covering Bot Framework, Big Data, Dataprep and more.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="info-box">
+                            <img alt="Cloud, Containers, DevOps" src="img/CloudContainersDevOps.jpg">
+                            <h3>Cloud, Container, DevOps</h3>
+                            <p>Get better insights in how to deploy apps on the cloud more efficiently and save your company money. Sessions in the Cloud, Containers, DevOps track cover Kubernetes, Serverless Architecture, Microservices, OpenShift, and Continuous Integration.
+                            </p>
+                          </div>
+                        </div>
+			
+		    <div class="col-md-4 col-sm-6">
+                        <div class="info-box">
+                            <img alt="Database" src="img/Database.jpg">
+                            <h3>Database</h3>
+                            <p>Meet database engineers and learn how to save your company money with Open Source database solutions. Specific topics include Scaling TB of data, Real-time data masking, Replication Features, Performance Schema, BigQuery, and Immutable Key-Value Stores.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="info-box">
+                            <img alt="Mobile Technologies" src="img/MobileTechnologies.jpg">
+                            <h3>Mobile Technologies</h3>
+                            <p>Mobile development sessions covers technologies for mobile platforms, Android, iOS, cross platform tools and discuss current trends and future of mobile technologies.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="info-box">
+                            <img alt="Web" src="img/WebTechnologies.jpg">
+                            <h3>Web Technologies</h3>
+                            <p>Web development sessions covers technologies for web platforms, Javascript, HTML, frameworks, development tools as well as upcoming trends and technologies.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="info-box">
+                            <img alt="Open Source Hardware and Firmware" src="img/OpenSourceHardwareFirmware.jpg">
+                            <h3>Open Source Hardware and Firmware</h3>
+                            <p>With the decrease of prices of hardware development tools and production open source hardware projects are gaining popularity. Projects range from laser cutters to pocket science labs. Apart from technical topics speakers will share their experience from making prototype to going to large scale production and working with mass manufacturers.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="info-box">
+                            <img alt="Kernel & Platform" src="img/KernelPlatform.jpg">
+                            <h3>Kernel & Platform</h3>
+                            <p>Topics from the Linux Kernel to BSD and desktop systems such as Meilix or applications like VLC. Learn about network servers, hacking with x86 Windows tablets, asynchronous integration of GPU computing with HPX many task processing, Unikernelized Linux, Open Build Service in Debian, and C from the trenches.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="info-box">
+                            <img alt="Science Tech and Education" src="img/ScienceTechEducation.jpg">
+                            <h3>Science Tech and Education</h3>
+                            <p>Science needs to be open and verifiable. As more and more tools are available to a larger part of the population the chance to become a scientist or simply to participate in citizen science increases. What tools exist? What hardware is available? How to do science hands-on with Open Source software and hardware?</p>
+                            </div>
+                        </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="info-box">
+                            <img alt="Open Data, Internet Society, Community" src="img/OpenDataInternetSocietyCommunity.jpg">
+                            <h3>Open Data, Internet Society, Community</h3>
+                            <p>More and more governments, companies and citizens share data for the benefit of the society. What are the use cases for Open data? What possibilities do we have for a truly free society in the times of tracking devices and supervision technologies, how to keep communities engaged in Free and Open Source development?
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="info-box">
+                            <img alt="Cybersecurity" src="img/ScienceTechEducation.jpg">
+                            <h3>Cybersecurity</h3>
+                            <p>Science needs to be open and verifiable. As more and more tools are available to a larger part of the population the chance to become a scientist or simply to participate in citizen science increases. What tools exist? What hardware is available? How to do science hands-on with Open Source software and hardware?</p>
+                            </div>
+                        </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="info-box">
+                            <img alt="Python" src="img/ScienceTechEducation.jpg">
+                            <h3>Python</h3>
+                            <p>Science needs to be open and verifiable. As more and more tools are available to a larger part of the population the chance to become a scientist or simply to participate in citizen science increases. What tools exist? What hardware is available? How to do science hands-on with Open Source software and hardware?</p>
+                            </div>
+                        </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="info-box">
+                            <img alt="Legal and Compliance" src="img/OpenDataInternetSocietyCommunity.jpg">
+                            <h3>Legal and Compliance</h3>
+                            <p>More and more governments, companies and citizens share data for the benefit of the society. What are the use cases for Open data? What possibilities do we have for a truly free society in the times of tracking devices and supervision technologies, how to keep communities engaged in Free and Open Source development?
+                            </p>
+                        </div>
+                    </div>
+
+            </div>
+        </section>
+
+        <a id="featured-speakers" class="in-page-link"></a>
+        <section class="speakers duplicatable-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Featured Speakers</h1>
+                    </div>
+                </div>
+                <div class="row">
+
+				<div class="col-md-6 col-sm-12 speaker-outer">
+                      <div class="speaker-with-bio">
+                          <div class="speaker">
+                              <div class="image-holder">
+                                  <img class="background-image" alt="Ivan Ma" src="img/MarcoGutierrez.jpg">
+                                  <div class="hover-state text-center preserve3d">
+                                      <div class="social-links vertical-align">                                   
+                                        <a target="_self" href="https://www.linkedin.com/in/marcogg">
+                                            <i class="icon social_linkedin"></i>
+                                        </a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="speaker-description">
+                              <h2>Marco A. Gutiérrez</h2>
+                              <span class="sub">Open Robotics</span>
+                              <p>Marco A. Gutiérrez holds a PhD in cognitive vision planning for robotics systems. He has contributed to RoboComp, the Point Cloud Library and Open Perception. He was also the co-founder of GlideX, a startup in the field of AI for network security.</p>
+                          </div>
+                      </div>
+                  </div>
+			
+				<div class="col-md-6 col-sm-12 speaker-outer">
+                      <div class="speaker-with-bio">
+                          <div class="speaker">
+                              <div class="image-holder">
+                                  <img class="background-image" alt="Daniel Blueman" src="img/DanielBlueman.jpg">
+                                  <div class="hover-state text-center preserve3d">
+                                      <div class="social-links vertical-align">
+                                        <a target="_self" href="https://www.linkedin.com/in/danielblueman/">
+                                            <i class="icon social_linkedin"></i>
+                                        </a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="speaker-description">
+                              <h2>Daniel Blueman</h2>
+                              <span class="sub">Numascale</span>
+                              <p>Daniel is working on a wide spectrum of embedded systems to large ccNUMA systems in conjunction with Open Source projects, most notably the Linux Kernel, for a couple of decades. His passion for learning has kindled his interest in hardware FPGA development, as well as radio/WiFi technology and full stack programming from low-level Golang to Javascript.</p>
+                          </div>
+                      </div>
+                  </div>	
+			
+				<!--<div style="text-align: center;"><a target="_self" href="https://eventyay.com/e/aac5bcc7/speakers" class="btn btn-hollow">More Speakers</a></div> -->
+                </div>
+            </div>
+        </section>
+
+	<a id="schedule-roster" class="in-page-link"></a>
+        <section class="duplicatable-content visitor-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Schedule Roster</h1>
+                    </div>
+                </div>
+					<div class="row">
+						<div class="col-sm-12">
+							  <div style="text-align: center">
+                                <img alt="Schedule Roster" src="img/schedule.png">
+                             <p></p><p></p><br><br>
+                         </div>
+                      </div>
+
+                        </div>
+	<!--		 <div style="text-align: center;"><a target="_self" href="./event/schedule.pdf" class="btn btn">Download Schedule PDF</a></div>
+				 <p></p><br><br> -->
+			</div>
+	</section>
+
+	<a id="schedule" class="in-page-link"></a>
+        <section class="schedule">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <h1>Exhibition
+                            <br/> January 6, 2020
+                        </h1>
+                        <ul class="schedule-overview">
+                            <li>
+                                <div class="schedule-title">
+                                    <span class="time">Sunday</span>
+                                    <span class="time">January 5</span>
+                                    <span class="title">
+                                        Exhibition Preparation takes place.
+                                    </span>
+                                </div>
+                                <div class="schedule-text">
+                                        <p>Throughout the day exhibitors prepare for the event.</p>
+
+                                </div>
+                                <div class="marker-pin">
+                                    <div class="top"></div>
+                                    <div class="middle"></div>
+                                    <div class="bottom"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="schedule-title">
+                                    <span class="time">Monday</span>
+                                    <span class="time">October 6</span>
+                                    <span class="title">
+                                        Exhibition opens throughout the day. Tour with speakers and VIPs takes place at 12:30.
+                                    </span>
+                                </div>
+                                <div class="schedule-text">
+                                        <p>8:00 PM Exhibition Preparation
+                                    	<br/>8:30 PM Breakfast Snacks for Exhibitors
+                                    	<br/>9:00 Exhibition Opens
+                                        <br/>12:30 PM Exhibition Tour with VIPs
+                                        <br/>17:00 PM Exhibition Closes</p>
+
+                                </div>
+                                <div class="marker-pin">
+                                    <div class="top"></div>
+                                    <div class="middle"></div>
+                                    <div class="bottom"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <h1>Conference
+                            <br>January 6, 2019
+                        </h1>
+                        <ul class="schedule-overview">
+                            <li>
+                                <div class="schedule-title">
+                                    <span class="time">Monday Morning</span>
+                                    <span class="time">January 6, 9:00 - 12:30</span>
+                                    <span class="title">
+                                         <p>Conference Opening</a>
+                                         <br/>Venue: University
+                                         <br/>Open Tech Track with VIP guests.</p>
+                                    </span>
+                                </div>
+                                <div class="schedule-text">
+                                    <p>8:00 Registration and Breakfast Snacks
+									<br/>9:00 Conference Opening Track 1: Open Tech
+									<br/>10:30 Coffee Break
+									<br/>10:50 Keynotes
+                                    <br/>12:30 Exhibition Visit
+								</p>
+                                </div>
+                                <div class="marker-pin">
+                                    <div class="top"></div>
+                                    <div class="middle"></div>
+                                    <div class="bottom"></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div class="schedule-title">
+                                    <span class="time">Monday Afternoon</span>
+                                    <span class="time">January 6, 14:00 - 17:30</span>
+                                    <span class="title">
+                                         <p>Afternoon Program
+                                         <br/>Venue: University
+                                         <br/> Different Tracks about Open Source Technologies.</p>
+                                    </span>
+                                </div>
+                                <div class="schedule-text">
+                                    <p>14:00 All Tracks Start
+                                    <br/>15:30 Coffee Break and Exhibition Visit
+                                    <br/>16:00 Tracks Continue
+                                    <br/>17:30 Sessions End</p>
+                                </p>
+                                </div>
+                                <div class="marker-pin">
+                                    <div class="top"></div>
+                                    <div class="middle"></div>
+                                    <div class="bottom"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <a id="socialevent" class="in-page-link"></a>
+                    <div class="col-sm-6 col-md-4">
+                        <h1>Social Events
+                            <br> January 5-6, 2019
+                        </h1>
+                        <ul class="schedule-overview">
+                            <li>
+                                <div class="schedule-title">
+                                    <span class="time">Sunday</span>
+                                    <span class="time">January 5, 12:00-16:00</span>
+                                    <span class="title">
+                                        Arrived in town for the OpenTechSummit? Join us at the Meet and Greet.
+                                    </span>
+                                </div>
+                                <div class="schedule-text">
+                                    <p>Join the OpenTechSummit Speakers and Attendees casual Meet & Greet hangout, meet the local tech scene.</p>
+                                </div>
+                                <div class="marker-pin">
+                                    <div class="top"></div>
+                                    <div class="middle"></div>
+                                    <div class="bottom"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="schedule-title">
+                                    <span class="time">Sunday</span>
+                                    <span class="time">January 5, 17:00</span>
+                                    <span class="title">
+                                        Venue Preparation with volunteers, organizers and exhibitors
+                                    </span>
+                                </div>
+                                <div class="schedule-text">
+                                    <p>Let's set up the venue for the event.</p>
+                                </div>
+                                <div class="marker-pin">
+                                    <div class="top"></div>
+                                    <div class="middle"></div>
+                                    <div class="bottom"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="schedule-title">
+                                    <span class="time">Sunday</span>
+                                    <span class="time">January 5, 19:00</span>
+                                    <span class="title">
+                                        Let's get together for a Pre-Event Dinner Meetup with speakers of the event.
+                                    </span>
+                                </div>
+                                <div class="schedule-text">
+                                    <p>Please join us for a pre-event dinner meetup with locals and international participants of the OpenTechSummit.</p>
+                                </div>
+                                <div class="marker-pin">
+                                    <div class="top"></div>
+                                    <div class="middle"></div>
+                                    <div class="bottom"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="schedule-title">
+                                    <span class="time">Monday</span>
+                                    <span class="time">January 6, 19:00</span>
+                                    <span class="title">
+                                        Our official OpenTechSummit Social Dinner Event</a>
+                                    </span>
+                                </div>
+                                <div class="schedule-text">
+                                    <p>Join us for the OpenTechSummit Social Dinner Event. Please get your social event ticket beforehand.</p>
+                                </div>
+                                <div class="marker-pin">
+                                    <div class="top"></div>
+                                    <div class="middle"></div>
+                                    <div class="bottom"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-header overlay preserve3d">
+            <div class="dark-layer"></div>
+            <div class="background-image-holder parallax-background">
+                <img class="background-image" alt="Background Image" src="img/moreaboutots.jpg">
+            </div>
+            <div class="container vertical-align">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-">
+                        <i class="icon pe-7s-global"></i>
+                        <i class="icon pe-7s-glasses"></i>
+                        <i class="icon pe-7s-sun icon-large"></i>
+                        <h1 class="text-white">A little more about OpenTechSummit</h1>
+                        <p class="lead text-white">
+                            OpenTechSummits are premier Free and Open Source technology events for developers, start-ups, and contributors. Projects at the event range from open hardware, to design, graphics and software. The first OpenTechSummit was established in 2009. Previous events took place in Vietnam, Germany, Thailand, Cambodia, China and India.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a id="organizers" class="in-page-link"></a>
+        <section class="speakers duplicatable-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Event Organizers</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="speaker-with-bio">
+                            <div class="speaker">
+                                <div class="image-holder">
+                                    <img class="background-image" alt="FOSSASIA" src="img/fossasia_400x400.png">
+                                    <div class="hover-state text-center preserve3d">
+                                        <div class="social-links vertical-align">
+                                            <a href="https://fossasia.org">
+                                                <i class="icon fa fa-external-link"></i>
+                                            </a>
+                                            <a href="https://twitter.com/fossasia">
+                                                <i class="icon social_twitter"></i>
+                                            </a>
+                                            <a href="https://github.com/fossasia">
+                                                <i class="icon fa fa-github"></i>
+                                            </a>
+                                            <a href="https://www.facebook.com/fossasia/">
+                                                <i class="icon social_facebook"></i>
+                                            </a>
+                                            <a href="https://in.linkedin.com/company/fossasia">
+                                                <i class="icon social_linkedin"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-description">
+                                <h2>
+                                    <div>
+                                        <br>
+                                    </div>FOSSASIA</h2>
+                                <span class="sub">Open Tech in Asia</span>
+                                <p>
+                                    FOSSASIA develops Open Source software and hardware solutions with a global developer community from its base in Asia and organizes Open Technology events around the year. The mission of FOSSASIA is to improve people's lives by sharing open technologies, knowledge and resources and building a sustainable FOSS ecosystem. Projects include conversational AIs, science applications and event management tools. FOSSASIA's annual OpenTechSummit in Singapore is the premier Open Technology event. FOSSASIA was founded in 2009.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="speaker-with-bio">
+                            <div class="speaker">
+                                <div class="image-holder">
+                                    <img class="background-image" alt="OpnTec Berlin" src="img/opntec.png">
+                                    <div class="hover-state text-center preserve3d">
+
+                                        <div class="social-links vertical-align">
+                                            <a href="https://opntec.com">
+                                                <i class="icon fa fa-external-link"></i>
+                                            </a>
+                                            <a href="https://twitter.com/opntec">
+                                                <i class="icon social_twitter"></i>
+                                            </a>
+                                            <a href="https://github.com/opntec/">
+                                            	<i class="icon fa fa-github"></i>
+                                        	</a>
+                                            <a href="https://www.linkedin.com/company/opntec/">
+                                                <i class="icon social_linkedin"></i>
+                                            </a>
+                                            <a href="https://www.facebook.com/opntec/">
+                                                <i class="icon social_facebook"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="speaker-description">
+                                <h2>
+                                    <div>
+                                        <br>
+                                    </div>OpnTec</h2>
+                                <span class="sub">Open Tech Development and Consulting</span>
+                                <p>
+                                    OpnTec GmbH is an Open Source company based in Berlin, Germany. We develop sustainable consumer products together with the open tech community and bring them to market. We create the missing pieces to make open technologies successful, be it software, hardware, design, or end user documentation and marketing. OpnTec has experience producing large batches of hardware. We provide consulting about best practices and organize events to share our knowledge.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+			<a id="twitter" class="in-page-link"></a>
+			<section class="subscribe-1 lazy-section">
+					<div class="background-image-holder parallax-background">
+						<img class="background-image" alt="Background Image" src="img/twitterbackground.jpg">
+					</div>
+
+					<div class="container">
+
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+								<div class="twitter-feed">
+									<i class="icon social_twitter text-white"></i>
+                  <!-- For changing parameters of tweets-feed, please see https://github.com/fossasia/fossasia-loklak-webtweets/blob/gh-pages/README.md for the full documentation -->
+									<div class="tweets-feed" data-count=3 data-from="otsasia">
+									</div>
+									<br/>
+									<span class="text-white">Follow <a href="https://twitter.com/otsasia" target="_self">@otsasia</a> for more updates</span>
+								</div>
+							</div>
+						</div>
+
+						</div>
+					</div>
+				</section>
+
+       <a id="volunteer" class="in-page-link"></a>
+        <section class="contained-gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-6">
+                        <div class="lightbox-gallery">
+                            <ul>
+                                <li>
+                                    <a href="img/Gallery1.jpg" data-lightbox="true" data-title="OpenTechSummit Summit">
+                                        <div class="background-image-holder">
+                                            <img class="background-image" alt="Lightbox Image" src="img/Gallery1.jpg">
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="img/Gallery2.jpg" data-lightbox="true" data-title="OpenTechSummit Summit">
+                                        <div class="background-image-holder">
+                                            <img class="background-image" alt="Lightbox Image" src="img/Gallery2.jpg">
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="img/Gallery3.jpg" data-lightbox="true" data-title="OpenTechSummit Summit">
+                                        <div class="background-image-holder">
+                                            <img class="background-image" alt="Lightbox Image" src="img/Gallery3.jpg">
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="img/Gallery9.jpg" data-lightbox="true" data-title="OpenTechSummit Summit">
+                                        <div class="background-image-holder">
+                                            <img class="background-image" alt="Lightbox Image" src="img/Gallery9.jpg">
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="img/Gallery5.jpg" data-lightbox="true" data-title="OpenTechSummit Summite">
+                                        <div class="background-image-holder">
+                                            <img class="background-image" alt="Lightbox Image" src="img/Gallery5.jpg">
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="img/Gallery6.jpg" data-lightbox="true" data-title="OpenTechSummit Summit">
+                                        <div class="background-image-holder">
+                                            <img class="background-image" alt="Lightbox Image" src="img/Gallery6.jpg">
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="img/Gallery8.jpg" data-lightbox="true" data-title="OpenTechSummit Summit">
+                                        <div class="background-image-holder">
+                                            <img class="background-image" alt="Lightbox Image" src="img/Gallery8.jpg">
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="img/Gallery12.jpg" data-lightbox="true" data-title="OpenTechSummit Summit">
+                                        <div class="background-image-holder">
+                                            <img class="background-image" alt="Lightbox Image" src="img/Gallery12.jpg">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                       <div class="col-md-5 col-sm-6">
+                        <h1>Volunteer at OpenTechSummit!</h1>
+                        <p class="lead">
+                            Volunteering is a great learning opportunity for community members who enjoy exploring how things work behind the scene, make new friends and get better connections with open source project teams. We will conduct skill and knowledge trainings prior the event to help volunteers familiarize with various roles including video recording, moderating, ticketing, writing etc. Join the Open Tech Volunteer Team for a fun and memorable experience.
+                        </p>
+                        <a href="./volunteers" class="btn" target="_self">Volunteer Registration</a>
+                        <a target="_self" href="./photos/" class="btn btn-hollow">Event Photos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+	<a id="sponsors" class="in-page-link"></a>
+    <!--    <section class="sponsors">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h1>Partner</h1>
+                    </div>
+                </div>
+		    
+               <div class="col-md-12 col-sm-6 sponsor-column">
+                    <div class="text-center">
+                        <a href="http://unesco.org" target="default">
+                            <img class="partner-logo" alt="UNESCO" src="img/unesco_sdg.png" style="max-width:400px">
+                        </a>
+                    </div>
+                </div>
+		   </section> -->
+	<a id="community_partner" class="in-page-link"></a>
+        <section class="sponsors">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h1>Community Partners</h1>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 sponsor-column">
+                    <div class="sponsor text-center">
+                        <a href="http://mbm.asia" target="_self">
+                           <img alt="MBM" src="img/mbm_logo.png">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 sponsor-column">
+                    <div class="sponsor text-center">
+                        <a href="https://susi.ai" target="_self">
+                           <img alt="MBM" src="img/SUSI.AI_logo.png">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 sponsor-column">
+                    <div class="sponsor text-center">
+                        <a href="https://pslab.io" target="_self">
+                           <img alt="Pocket Science Lab" src="img/pslab-io.png">
+                        </a>
+                    </div>
+                </div>
+
+                     </div>
+                </div>
+        </section> 
+
+        <a id="team" class="in-page-link"></a>
+        <section class="speakers duplicatable-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Team</h1>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="speaker-with-bio">
+                            <div class="speaker">
+                                <div class="image-holder">
+                                    <img class="background-image" alt="Hong Phuc Dang" src="img/HongPhucDang.jpg">
+                                    <div class="hover-state text-center preserve3d">
+                                        <div class="social-links vertical-align">
+                                            <a href="https://twitter.com/hpdang" target="default">
+                                                <i class="icon social_twitter"></i>
+                                            </a>
+                                            <a href="https://www.linkedin.com/in/hongphucdang" target="default">
+                                                <i class="icon social_linkedin"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-description">
+                                <h2>Hong Phuc Dang</h2>
+                                <span class="sub">OpenTechSummit Founder</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="speaker-with-bio">
+                            <div class="speaker">
+                                <div class="image-holder">
+                                    <img class="background-image" alt="Mario Behling" src="img/mariobehling.jpg">
+                                    <div class="hover-state text-center preserve3d">
+                                        <div class="social-links vertical-align">
+                                            <a href="https://twitter.com/mariobehling" target="default">
+                                                <i class="icon social_twitter"></i>
+                                            </a>
+                                            <a href="https://www.linkedin.com/in/mariobehling" target="default">
+                                                <i class="icon social_linkedin"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-description">
+                                <h2>Mario Behling</h2>
+                                <span class="sub">CEO at OpnTec</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="speaker-with-bio">
+                            <div class="speaker">
+                                <div class="image-holder">
+                                    <img class="background-image" alt="Nayana" src="img/NayanaAdassuriya.jpg">
+                                    <div class="hover-state text-center preserve3d">
+                                        <div class="social-links vertical-align">
+                                            <a href="http://codeketchup.blogspot.sg" target="default">
+                                                <i class="icon fa fa-external-link"></i>
+                                            </a>
+                                            <a href="https://www.linkedin.com/in/nadassuriya" target="default">
+                                                <i class="icon social_linkedin"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-description">
+                                <h2>Nayana Adassuriya</h2>
+                                <span class="sub">Social Enterprise</span>
+                            </div>
+                        </div>
+                    </div> 
+
+		          <div class="col-md-6 col-sm-12">
+                        <div class="speaker-with-bio">
+                            <div class="speaker">
+                                <div class="image-holder">
+                                    <img class="background-image" alt="Eden Dang" src="img/EdenDang.jpg">
+                                    <div class="hover-state text-center preserve3d">
+                                        <div class="social-links vertical-align">
+                                            <a href="https://twitter.com/edenyay" target="default">
+                                                <i class="icon social_twitter"></i>
+                                            </a>
+                                            <a href="https://www.linkedin.com/in/dangphuchau/" target="default">
+                                                <i class="icon social_linkedin"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-description">
+                                <h2>Eden Jade</h2>
+                                <span class="sub">Senior Program Manager at FOSSASIA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+			<a id="venue" class="in-page-link"></a>
+			<section class="image-with-text background-dark preserve-3d">
+				<div class="go-left side-image col-sm-4 col-md-6">
+					<div class="background-image-holder">
+						<img class="background-image" alt="query-server" src="img/venue.jpg">
+					</div>
+				</div>
+				<div class="container vertical-align">
+					<div class="row">
+						<div class="col-md-5 col-md-offset-7 col-sm-7 col-sm-offset-5">
+							<h1 class="text-white">Summit Venue - University of Moratuwa</h1>
+							<p class="lead text-white">
+								The <a target="default" href="https://www.mrt.ac.lk/">University of Moratuwa</a> is hosting the OpenTechSummit as a partner of the event.<br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+        <a id="map" class="in-page-link"></a>
+        <section class="contact-tweets">
+            <div class="container vertical-align">
+                <div class="row">
+                    <div class="col-md-5 col-sm-6">
+                        <span class="text-white">
+                            <h1 class="text-white"><a target="default" href="https://www.mrt.ac.lk/">Muratowa University</a> is the event location for the OpenTechSummit.</h1>
+                            <h1 class="text-white">Address:<br>
+                            Bandaranayake Mawatha<br>
+                            Moratuwa 10400<br>
+                        	Europe</h1>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="map-holder col-md-6 col-sm-4 maps">
+                <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=79.89902079105379%2C6.795678847450023%2C79.9031299352646%2C6.799093269230428&amp;layer=mapnik&amp;marker=6.797386061371924%2C79.90107536315918"></iframe>
+            </div>
+        </section>
+
+		<div class="footer-container">
+			<footer class="classic">
+				<div class="container">
+					<div class="row ui-sortable">
+						<div class="col-sm-2">
+							<ul class="menu">
+								<li><a target="_self" href="https://opentechsummit.net">Events</a></li>
+								<li><a target="_self" href="https://opentechsummit.net/contact">Contact</a></li>
+								<li><a class="inner-link back-to-top" href="#top">Back To Top</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-8">
+							<span class="lead color-heading">About OpenTechSummit</span>
+							<p>OpenTechSummits are premier Free and Open Source technology events for developers, educators, designers, businesses, NGO and governmental organizations organized by <a target="_self" href="https://opntec.com/" style="color:#777777">OpnTec</a> and <a target="_self" href="https://fossasia.org/" style="color:#777777">FOSSASIA</a>. Our mission is to improve people's lives by sharing open technologies, knowledge and resources and building a sustainable FOSS ecosystem. Topics at events range from open source software, to hardware, and design covering areas such as artificial intelligence, cloud and containers, Blockchain, programming languages like Python, operating systems, open science, open education and more. The first open tech event took place in 2009 in Vietnam. Other locations of regular summits are across Asia and Europe in Austria, Cambodia, China, Germany, India, Japan, Malaysia, and Thailand. At many events we run coding programs, hackathons and development contests like <a target="_self" href="https://codeheat.org" style="color:#777777">Codeheat </a> and support new contributors to join. The <a target="_self" href="https://summit.fossasia.org/" style="color:#777777">FOSSASIA Summit</a> in Singapore and the <a target="_self" href="https://opentechsummit.eu" style="color:#777777">OpenTechSummit Europe</a> in Berlin are our signature events. To organize events we develop an <a target="_self" href="https://eventyay.com/" style="color:#777777">open source event management</a> platform. OpenTechSummit was founded by <a target="_self" href="https://twitter.com/mariobehling" style="color:#777777">Mario Behling</a> and <a target="_self" href="https://twitter.com/hpdang" style="color:#777777">Hong Phuc Dang</a>.</div>
+						<div class="col-sm-2">
+							<ul class="contact-methods">
+								<li><i class="icon pe-7s-map-marker"></i><span>FOSSASIA</span></li>
+								<li><span>6 Eu Tong Sen Street<br>#05-07 The Central<br>Singapore 059817<br><a href="https://www.openstreetmap.org/way/147104300" style="color:#777777" id="mailAdd">[Map]</a></span></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="row ui-sortable">
+						<div class="col-sm-12 text-center">
+							<ul class="social-profiles">
+								<li><a target="_self" href="https://twitter.com/otasasia"><i class="icon social_twitter"></i></a></li>
+								<li><a target="_self" href="https://www.facebook.com/opentechsummitasia/"><i class="icon social_facebook"></i></a></li>
+								<li><a target="_self" href="https://www.linkedin.com/groups/3762811"><i class="icon social_linkedin icon-large"></i></a></li>
+								<li><a target="_self" href="https://youtube.com/fossasiaorg"><i class="icon social_youtube icon-large"></i></a></li>
+								<li><a target="_self" href="https://www.flickr.com/photos/fossasia"><i class="icon social_flickr icon-large"></i></a></li>
+                				<li><a target="_self" href="https://www.instagram.com/explore/tags/fossasia/"><i class="icon social_instagram"></i></a></li>
+								<li><a target="_self" href="https://github.com/fossasia"><i class="fa fa-github fa-lg"></i></a></li>
+								<li><a target="_self" href="https://www.weibo.com/u/5784920339"><i class="fa fa-weibo fa-lg"></i></a></li>
+								<li><a target="_self" href="https://vk.com/fossasia"><i class="fa fa-vk fa-lg"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<a href="#top" id="scrollToTopBtn" title="Go to top"><i class="scrollToTop"></i></a>
+    </body>
+</html>

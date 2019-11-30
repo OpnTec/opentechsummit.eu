@@ -92,7 +92,6 @@ img {
 .footer-container,
 .nav-container,
 nav {
-  max-width: 1600px;
   margin: 0px auto;
 }
 .boxed-layout .main-container,
@@ -271,7 +270,7 @@ h6 {
 h1 {
   font-size: 30px;
   line-height: 36px;
-  margin-bottom: 42px;
+  margin-bottom: 35px;
 }
 h3 {
   font-size: 20px;
@@ -405,6 +404,22 @@ p a,
   border: 2px solid #e12b00;
   color: #e12b00;
 }
+@media all and (max-width: 768px) {
+    .btn {
+        display: block;
+        align-content: center;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+}
+    .btn-hollow {
+        display: block;
+        align-content: center;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+}
 .btn-hollow:hover {
   background: #e12b00;
 }
@@ -431,6 +446,10 @@ p a,
   min-width: 230px;
   border-radius: 35px;
 }
+
+.btn-lg:nth-of-type(1){
+  margin-right: 1% !important;
+}
 /*!
 // Backgrounds & Parallax
 // --------------------------------------------------*/
@@ -456,7 +475,7 @@ nav .logo {
   max-height: 45px;
   max-width: 110px;
   position: absolute;
-  top: -6px;
+  top: 0px;
   opacity: 1;
 }
 nav .text-right {
@@ -490,13 +509,16 @@ nav .container {
 }
 .bottom-border {
   position: absolute;
+  top:63px;
   bottom: 2px;
   width: 100%;
   height: 2px;
   background: rgba(255, 255, 255, 0.3);
+  margin-bottom: 24px;
 }
 .sidebar-menu .bottom-border {
   position: relative;
+  top: 0px;
   bottom: 0px;
   background: rgba(255, 255, 255, 0.2);
   display: block !important;
@@ -536,37 +558,70 @@ nav .container {
 }
 .nav-dropdown {
   position: absolute;
-  z-index: -1;
-  display: none;
+  z-index: 1;
+  opacity: 0;
   background: rgba(255, 255, 255, 0.9);
   min-width: 200px;
   overflow: hidden;
   margin-top: -2px;
+  -webkit-transition: all 0.3s;
 }
+.projects{
+   min-height:525px;
+}
+
+.events{
+   min-height: 450px;
+}
+
 .nav-dropdown li:first-child {
-  margin-top: 12px;
+  margin-top: -1px;
 }
 .nav-dropdown li {
   opacity: 0;
   margin-right: 0px;
   float: none;
-  margin-bottom: 18px;
+  -webkit-transition: all 0.3s;
 }
 .nav-dropdown li a {
-  padding-bottom: 0px;
-  padding-left: 24px;
+  width: 100%;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 2px;
   color: #333333;
+  -webkit-transition: all 0.2s;
 }
 .nav-dropdown li a:hover {
   border-color: rgba(0, 0, 0, 0);
+  color: white;
 }
-.has-dropdown:hover .nav-dropdown {
-  z-index: 10;
-  max-height: 300px;
+.nav-dropdown li:hover {
+    opacity: 1;
+    background-color: #E12B00;
+}
+
+
+
+.nav-dropdown{
+  display: none;
+  min-height:314px;
+
+}
+
+.has-dropdown:hover > ul{
   display: block;
+}
+
+
+.has-dropdown:hover .nav-dropdown {
+  opacity: 1;
+  max-height: 300px;
 }
 .has-dropdown:hover .nav-dropdown li {
   opacity: 1;
+}
+.has-dropdown:hover .nav-dropdown li a {
+  padding-left: 24px;
 }
 .has-dropdown a {
   padding-left: 18px;
@@ -618,6 +673,16 @@ nav .container {
 .sticky-nav .has-dropdown:before {
   color: #333333;
 }
+.sticky-nav .has-dropdown .nav-dropdown li a:hover
+{
+  border-color: rgba(0,0,0,0);
+  color: white;
+}
+.sticky-nav .has-dropdown .nav-dropdown li:hover
+{
+  opacity: 1;
+  background-color: #E12B00;
+}
 .sidebar-menu-toggle,
 .mobile-menu-toggle {
   position: absolute;
@@ -658,12 +723,12 @@ nav .container {
   -webkit-transform: translate3d(-300px, 0px, 0px);
   -moz-transform: translate3d(-300px, 0px, 0px);
 }
-.sidebar-content {
-  padding: 0px 24px;
-  margin-top: 24px;
-}
+
 .widget {
   margin-bottom: 24px;
+  padding: 0px 24px;
+  position: relative;
+  z-index: 9999;
 }
 .widget .title {
   font-size: 16px;
@@ -705,21 +770,19 @@ nav .container {
 .instagram-sidebar {
   overflow-y: auto;
 }
-.sidebar-content .copy-text {
-  position: absolute;
-  bottom: 32px;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 12px;
-}
+
 .copy-text-box {
   position: relative;
-  height: 300px;
-  width: 100%;
+  height:100%;
+  min-height:450px;
+  top:-415px;
+  padding: 5px 0px;
   color: rgba(255, 255, 255, 0.5);
 }
 .copy-text-bottom {
+  left: 24px;
+  bottom:5px;
   position: absolute;
-  bottom: 5px;
 }
 .text-panel {
   background: #474747;
@@ -810,7 +873,8 @@ nav .container {
   .nav-dropdown {
     position: relative;
     display: none;
-  }
+    min-height: 600px;
+ }
   .has-dropdown:hover .nav-dropdown {
     display: block;
   }
@@ -821,6 +885,12 @@ nav .container {
 /*!
 // 8. Sliders & Dividers & Headers
 // --------------------------------------------------*/
+.item p.summary img {
+  margin: auto;
+}
+.carousel-inner>.item {
+  padding: 40px 60px !important;
+}
 .hero-slider {
   padding: 0px;
   position: relative;
@@ -1123,6 +1193,18 @@ nav .container {
 .call-to-action .social_twitter {
   background-color: #00aced;
 }
+.call-to-action .social_googleplus {
+  background-color: #d34836;
+}
+.call-to-action .social_linkedin {
+  background-color: #0077B5;
+}
+.call-to-action .social_pinterest {
+  background-color: #BD081C;
+}
+.call-to-action .social_tumblr {
+  background-color: #35465c;
+}
 .call-to-action a:last-of-type i {
   margin-right: 0px;
 }
@@ -1159,6 +1241,14 @@ nav .container {
     -ms-transform: translateY(0px);
     transform: translateY(0px);
   }
+    .side-image {
+  padding: 70px 0px;
+  position: relative;
+  top: 0px;
+        height: 50%;
+        width: 100%;
+        margin-bottom: 50px;
+}
 }
 /*!
 // Promo Blocks
@@ -1219,7 +1309,7 @@ nav .container {
   background-color: #b82300;
   right: 0px;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 990px) {
   .block-content {
     margin-bottom: 144px;
     overflow: hidden;
@@ -1315,6 +1405,7 @@ nav .container {
   width: 50%;
   float: left;
   margin-bottom: 0px;
+  max-width: 300px;
 }
 .speaker-with-bio .speaker-description {
   width: 50%;
@@ -1329,10 +1420,13 @@ nav .container {
 @media all and (max-width: 767px) {
   .speaker-with-bio .speaker {
     width: 100%;
+    float: none;
+    margin: auto;
   }
   .speaker-with-bio .speaker-description {
     width: 100%;
     padding-left: 0px;
+    text-align: center;
   }
 }
 .topics {
@@ -1398,6 +1492,7 @@ nav .container {
   min-width: 150px;
   margin-top: 32px;
   margin-right: 16px;
+  width: 175px;
 }
 @media all and (max-width: 768px) {
   .inline-video iframe {
@@ -1427,7 +1522,7 @@ nav .container {
   margin-bottom: 36px;
 }
 .schedule-overview li {
-  padding: 24px;
+  padding: 24px 34px 24px 18px;
   position: relative;
   cursor: pointer;
   transition: all 0.3s ease-out;
@@ -1851,6 +1946,7 @@ p.question {
 .email-subscribe span {
   display: block;
   margin-top: 12px;
+  color: #cfcfcf;
 }
 .twitter-feed i {
   font-size: 48px;
@@ -1989,15 +2085,15 @@ p.question {
 }
 .sponsor {
   margin-bottom: 36px;
-  height: 80px;
+  height: 100px;
   line-height: 80px;
 }
 .sponsor img {
-  max-width: 150px;
+  max-width: 220px;
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
-  max-height: 80px;
+  max-height: 100px;
 }
 .sponsors span {
   display: inline-block;
@@ -2288,7 +2384,6 @@ footer.short .top-border {
   bottom: 10px;
   left: 8px;
   font-size: 16px;
-  top: 2px;
 }
 footer.classic .social-profiles {
   margin-top: 36px;
