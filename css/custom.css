@@ -195,5 +195,12 @@
 @media all and (max-width: 767px) {
   .hero-slider .btn-register {
     display: inline-block;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 0px;
+  }
+  .hero-slider .btn{
+    margin-bottom: 15px;
+    margin-right: 8px;
   }
 }
