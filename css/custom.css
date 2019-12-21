@@ -193,11 +193,9 @@
     background-color: transparent;
 }
 @media all and (max-width: 767px) {
-  .hero-slider .btn-register {
+  .hero-slider .btn-hollow {
     display: inline-block;
-    margin-bottom: 15px;
-    margin-right: 15px;
-    margin-left: 0px;
+    margin-left: 0;
   }
   .hero-slider .btn{
     margin-bottom: 15px;
