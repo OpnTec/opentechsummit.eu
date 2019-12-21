@@ -192,3 +192,13 @@
 #myBtn:hover {
     background-color: transparent;
 }
+@media all and (max-width: 767px) {
+  .hero-slider .btn-hollow {
+    display: inline-block;
+    margin-left: 0;
+  }
+  .hero-slider .btn{
+    margin-bottom: 15px;
+    margin-right: 8px;
+  }
+}
