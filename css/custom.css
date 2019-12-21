@@ -192,3 +192,8 @@
 #myBtn:hover {
     background-color: transparent;
 }
+@media all and (max-width: 767px) {
+  .hero-slider .btn-register {
+    display: inline-block;
+  }
+}
