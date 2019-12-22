@@ -566,7 +566,7 @@ nav .container {
 }
 .nav-dropdown li:hover {
     opacity: 1;
-    background-color: #E12B00;
+    background-color: #ff8700;
 }
 .nav-dropdown{
   display: none;
