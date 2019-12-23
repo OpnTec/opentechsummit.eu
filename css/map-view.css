@@ -1,0 +1,59 @@
+.map-view iframe {
+    border: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+.contact-tweets .map-view {
+    position: absolute;
+    height: 100%;
+    padding: 0px;
+    top: 0px;
+    right: 0px;
+
+  }
+  .map-view:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+  }
+  .fullwidth-map .map-view {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  @media all and (max-width: 767px) {
+    .map-view:before {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        opacity: 0;
+      } 
+      .map-view iframe {
+        border: 0px;
+        position: relative;
+        width: 100%;
+        height: 100%;
+      } 
+      .fullwidth-map .map-view {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        bottom: 0px;
+      }
+      .contact-tweets .map-view {
+        position: relative;
+        height: 100%;
+        padding: 0px;
+        top: 0px;
+        right: 0px;
+        
+      }
+  }
