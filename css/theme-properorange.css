@@ -560,12 +560,19 @@ nav .container {
 }
 .nav-dropdown li:hover {
     opacity: 1;
-    background-color: #ff8700;
+    background-color: #e67a00;
+}
+.nav-dropdown{
+  display: none;
+  min-height:314px;
+
+}
+.has-dropdown:hover > ul{
+  display: block;
 }
 .has-dropdown:hover .nav-dropdown {
-  z-index: 10;
+ opacity: 1;
   max-height: 300px;
-  display: block;
 }
 .has-dropdown:hover .nav-dropdown li {
   opacity: 1;
