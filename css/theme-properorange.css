@@ -1,7 +1,6 @@
 /*!
 // Contents
 // ------------------------------------------------
-
  1. Mixins
  2. Helper classes & resets
  3. Loader
@@ -19,7 +18,6 @@
  15. Contact
  16. Forms
  17. Footers
-
 // --------------------------------------------------*/
 /*!
 // 1. Useful Mixins
@@ -61,7 +59,7 @@
   background-color: #333333;
   opacity: 0.5;
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -248,7 +246,7 @@ nav {
   color: #fff;
 }
 body {
-  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
   color: #777777;
@@ -263,7 +261,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin: 0px;
   color: #333333;
@@ -398,7 +396,7 @@ p a,
 }
 .btn:hover {
   color: #fff;
-  background: #c82600;
+  background: #e67a00;
 }
 .btn-hollow {
   background: none;
@@ -544,40 +542,27 @@ nav .container {
   margin-top: -2px;
 }
 .nav-dropdown li:first-child {
-  margin-top: -1px;
+  margin-top: 12px;
 }
 .nav-dropdown li {
   opacity: 0;
   margin-right: 0px;
   float: none;
-  -webkit-transition: all 0.3s;
+  margin-bottom: 18px;
 }
 .nav-dropdown li a {
-  width: 100%;
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 2px;
+  padding-bottom: 0px;
+  padding-left: 24px;
   color: #333333;
-  -webkit-transition: all 0.2s;
 }
 .nav-dropdown li a:hover {
   border-color: rgba(0, 0, 0, 0);
-  color: white;
 }
 .nav-dropdown li:hover {
     opacity: 1;
     background-color: #ff8700;
 }
-.nav-dropdown{
-  display: none;
-  min-height:314px;
-
-}
-
-.has-dropdown:hover > ul{
-  display: block;
-}
- .has-dropdown:hover .nav-dropdown {
+.has-dropdown:hover .nav-dropdown {
   z-index: 10;
   max-height: 300px;
   display: block;
@@ -590,7 +575,7 @@ nav .container {
 }
 .has-dropdown:before {
   display: inline-block;
-  font-family: 'Pe-icon-7-stroke';
+  font-family: "Pe-icon-7-stroke";
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -846,7 +831,7 @@ nav .container {
   background-color: #333333;
   opacity: 0.4;
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -955,7 +940,7 @@ nav .container {
   background-color: #ff8700;
   opacity: 0.8;
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -1607,8 +1592,8 @@ nav .container {
   margin-bottom: 16px;
 }
 @media all and (max-width: 1200px) {
-  .instagram li:nth-child(n+9),
-  .lightbox-gallery li:nth-child(n+9) {
+  .instagram li:nth-child(n + 9),
+  .lightbox-gallery li:nth-child(n + 9) {
     display: none;
   }
   .instagram li,
@@ -1617,8 +1602,8 @@ nav .container {
   }
 }
 @media all and (max-width: 900px) {
-  .instagram li:nth-child(n+7),
-  .lightbox-gallery li:nth-child(n+7) {
+  .instagram li:nth-child(n + 7),
+  .lightbox-gallery li:nth-child(n + 7) {
     display: none;
   }
   .instagram li,
@@ -1631,8 +1616,8 @@ nav .container {
   .lightbox-gallery {
     padding: 144px 0px;
   }
-  .instagram li:nth-child(n+5),
-  .lightbox-gallery li:nth-child(n+5) {
+  .instagram li:nth-child(n + 5),
+  .lightbox-gallery li:nth-child(n + 5) {
     display: none;
   }
   .instagram li,
@@ -1647,8 +1632,8 @@ nav .container {
 .contained-gallery .lightbox-gallery {
   padding: 185px 0px;
 }
-.contained-gallery .instagram li:nth-child(n+9),
-.contained-gallery .lightbox-gallery li:nth-child(n+9) {
+.contained-gallery .instagram li:nth-child(n + 9),
+.contained-gallery .lightbox-gallery li:nth-child(n + 9) {
   display: none;
 }
 .contained-gallery .instagram li,
@@ -1657,10 +1642,10 @@ nav .container {
   opacity: 0.7;
 }
 @media all and (max-width: 1024px) {
-  .contained-gallery .instagram li:nth-child(n+7) {
+  .contained-gallery .instagram li:nth-child(n + 7) {
     display: none;
   }
-  .contained-gallery .lightbox-gallery li:nth-child(n+7) {
+  .contained-gallery .lightbox-gallery li:nth-child(n + 7) {
     display: none;
   }
   .contained-gallery .instagram li,
@@ -1680,12 +1665,12 @@ nav .container {
   .contained-gallery .btn {
     margin-bottom: 0px;
   }
-  .contained-gallery .instagram li:nth-child(n+5),
-  .contained-gallery .lightbox-gallery li:nth-child(n+5) {
+  .contained-gallery .instagram li:nth-child(n + 5),
+  .contained-gallery .lightbox-gallery li:nth-child(n + 5) {
     display: block !important;
   }
-  .contained-gallery .instagram li:nth-child(n+7),
-  .contained-gallery .lightbox-gallery li:nth-child(n+7) {
+  .contained-gallery .instagram li:nth-child(n + 7),
+  .contained-gallery .lightbox-gallery li:nth-child(n + 7) {
     display: none !important;
   }
   .contained-gallery .instagram li,
@@ -1832,7 +1817,7 @@ p.question {
   background-color: #333333;
   opacity: 0.4;
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -1877,7 +1862,7 @@ p.question {
   color: #fff;
   font-size: 30px;
   line-height: 36px;
-  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 .tweets-feed .tweet a {
@@ -1915,7 +1900,7 @@ p.question {
   display: inline-block;
 }
 .contact-tweets .map-holder {
-  position: absolute;
+  position: relative;
   height: 100%;
   padding: 0px;
   top: 0px;
@@ -1925,7 +1910,7 @@ p.question {
   display: block !important;
 }
 .map-holder:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1982,7 +1967,7 @@ p.question {
   overflow: hidden;
 }
 .fullwidth-map.screen:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2134,10 +2119,10 @@ input.error {
   border-radius: 20px;
 }
 .form-error {
-  background-color: #D74B4B;
+  background-color: #d74b4b;
 }
 form .field-error {
-  background: #D74B4B !important;
+  background: #d74b4b !important;
 }
 @media all and (max-width: 767px) {
   form.register input,
