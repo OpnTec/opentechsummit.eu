@@ -571,8 +571,9 @@ nav .container {
   display: block;
 }
 .has-dropdown:hover .nav-dropdown {
-  opacity: 1;
+  z-index: 10;
   max-height: 300px;
+  display: block;
 }
 .has-dropdown:hover .nav-dropdown li {
   opacity: 1;
