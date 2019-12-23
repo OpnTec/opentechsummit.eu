@@ -202,12 +202,8 @@
     margin-right: 8px;
   }
 }
-.nav-dropdown li:first-child {
-  margin-top: -1px;
-}
 .nav-dropdown li {
   opacity: 0;
-  margin-right: 0px;
   float: none;
   -webkit-transition: all 0.3s;
 }
@@ -215,7 +211,6 @@
   width: 100%;
   padding-top: 9px;
   padding-bottom: 9px;
-  padding-left: 2px;
   color: #333333;
   -webkit-transition: all 0.2s;
 }
@@ -225,5 +220,5 @@
 }
 .nav-dropdown li:hover {
     opacity: 1;
-    background-color: #E12B00;
+    background-color: #ff8700;
 }
