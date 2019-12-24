@@ -209,8 +209,6 @@
 }
 .nav-dropdown li a {
   width: 100%;
-  padding-top: 9px;
-  padding-bottom: 9px;
   color: #333333;
   -webkit-transition: all 0.2s;
 }
