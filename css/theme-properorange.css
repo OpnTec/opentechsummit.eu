@@ -544,16 +544,17 @@ nav .container {
   margin-top: -2px;
 }
 .nav-dropdown li:first-child {
-  margin-top: 12px;
+  /*margin-top: 12px;*/
 }
 .nav-dropdown li {
   opacity: 0;
   margin-right: 0px;
   float: none;
-  margin-bottom: 18px;
+ /* margin-bottom: 18px;*/
 }
 .nav-dropdown li a {
-  padding-bottom: 0px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   padding-left: 24px;
   color: #333333;
 }
