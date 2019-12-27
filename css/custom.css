@@ -202,3 +202,21 @@
     margin-right: 8px;
   }
 }
+.nav-dropdown li {
+  opacity: 0;
+  float: none;
+  -webkit-transition: all 0.3s;
+}
+.nav-dropdown li a {
+  width: 100%;
+  color: #333333;
+  -webkit-transition: all 0.2s;
+}
+.nav-dropdown li a:hover {
+  border-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+.nav-dropdown li:hover {
+    opacity: 1;
+    background-color: #ff8700;
+}
